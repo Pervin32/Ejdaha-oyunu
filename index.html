@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>RPG - Əjdaha Qovucu</title>
+  </head>
+  <body>
+    <!-- Bu HTML kodu Əjdaha Qovucu oyununun əsas strukturunu təşkil edir -->
+
+<!-- #game - Bütün oyun elementlərini əhatə edən əsas konteyner -->
+<div id="game">
+  <!-- #stats - Oyunçunun statistikasını (XP, Sağlamlıq, Qızıl) göstərən bölmə -->
+  <div id="stats">
+    <!-- .stat klası ilə hər bir statistika elementi formatlanır -->
+    <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+    <span class="stat">Sağlamlıq: <strong><span id="healthText">100</span></strong></span>
+    <span class="stat">Qızıl: <strong><span id="goldText">50</span></strong></span>
+  </div>
+
+  <!-- #controls - Oyunçunun hərəkətlərini idarə edən düymələr -->
+  <div id="controls">
+    <button id="button1">Mağazaya get</button>
+    <button id="button2">Mağaraya get</button>
+    <button id="button3">Əjdaha ilə döyüş</button>
+  </div>
+
+  <!-- #monsterStats - Mövcud monsterin statistikasını göstərən bölmə -->
+  <div id="monsterStats">
+    <span class="stat">Monsterin Adı: <strong><span id="monsterName"></span></strong></span>
+    <span class="stat">Sağlamlıq: <strong><span id="monsterHealth"></span></strong></span>
+  </div>
+
+  <!-- #text - Oyun haqqında məlumat və təlimatları göstərən mətn sahəsi -->
+  <div id="text">
+    Əjdaha Qovucuya xoş gəlmisiniz. Siz insanların şəhərdən çıxmasına mane olan əjdahanı məğlub etməlisiniz. Siz şəhər meydanındasınız. Hara getmək istəyirsiniz? Yuxarıdakı düymələrdən istifadə edin.
+  </div>
+</div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
